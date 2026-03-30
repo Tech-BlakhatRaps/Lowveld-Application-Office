@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lowveld Application Office</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Lowveld Application Office</h1>
+</header>
+
+<!-- Next Deadline Widget -->
+<section id="nextDeadlineSection">
+    <h2>Next Deadline</h2>
+    <div id="nextDeadlineCard" class="card">Loading next deadline...</div>
+</section>
+
+<!-- Search & Filter Section -->
+<section>
+<h2>Search & Sort Institutions</h2>
+<input type="text" id="searchName" placeholder="Search by name...">
+<select id="filterStatus">
+    <option value="">All Statuses</option>
+    <option value="Open">Open</option>
+    <option value="Soon">Soon</option>
+</select>
+<input type="date" id="filterDeadline">
+<select id="sortDeadline">
+    <option value="asc">Sort by Deadline: Ascending</option>
+    <option value="desc">Sort by Deadline: Descending</option>
+</select>
+<button class="btn" id="applyBtn">Apply Filters</button>
+</section>
+
+<!-- Universities Grid -->
+<section>
+<h2>Universities</h2>
+<div class="grid" id="universitiesGrid"></div>
+</section>
+
+<!-- Colleges Grid -->
+<section>
+<h2>Colleges</h2>
+<div class="grid" id="collegesGrid"></div>
+</section>
+
+<!-- Contact Section -->
+<section>
+<h2>Contact Us</h2>
+<p>Call us: +27 50 006 3063</p>
+<a href="https://wa.me/270500063063" target="_blank" class="btn">Chat on WhatsApp</a>
+</section>
+
+<!-- PapaParse for CSV -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
